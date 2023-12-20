@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #paragraphe2 h1{
+            width: 50%;
+        }
+
+        ul li{
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+
+      
+     <div class="paragraphe1">
+    <h1></h1>
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro totam quae, sequi reprehenderit 
+     in impedit doloremque perferendisvel debitis accusantium voluptates minima repellendus deleniti maiores 
+     ad esse quidem adipisci error.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem repudiandae sit ipsum quod incidunt veniam, assumenda, 
+    eveniet quasi accusantium praesentium tempore qui numquam, sint nulla error adipisci tempora accusamus.</P>
+     <a href="https://www.youtube.com/watch?v=z9UB5U7kSec&list=RDD3yMC_qoAes&index=35">youtube</a>
+    </div>
+
+
+
+<!-----------------section avec la class et la liste--------------->
+    
+     <div class="liste">
+        <h1></h1>
+        <ul>
+            <li>coco</li>
+            <li>coco</li>
+            <li>coco</li>
+            <li>coco</li>
+        </ul>
+     </div>
+
+<!-----------------paragraphe avec id----------------------------->
+
+
+     <section id="paragraphe2">
+        <h1></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorem iste cum tempore fugiat placeat consequatur voluptas est,
+         ratione iusto ea necessitatibus magni repellendus perspiciatis expedita minima recusandae dolor corrupti.</p>
+         <img src="WIN_20231207_11_55_35_Pro.jpg" width="700" height="400"  id="photos">
+        
+         <input type="text" id="champ" placeholder="" value="">
+        <button  id="ajouter">Ajouter</button>
+        <button  id="supprimer">supprimer</button>
+
+        <ul id="ul">
+            <li></li>
+        </ul>
+   
+     </section>
+
+     
+
+
+
+    <script src="dom.js"></script>
+
+    <script>
+        let ajouter=document.querySelector('#ajouter');
+        ajouter.addEventListener('click', function(){
+        var li = document.createElement('li');  
+        li.innerHTML=champ.value;
+      
+        ul.appendChild(li);
+        })
+        console.log(typeof champ);
+
+
+    //supprimer
+
+    let supprimer=document.querySelector('#supprimer');
+        supprimer.addEventListener('click', function(){
+        
+            
+        
+        let effacer = supprimer.removeChlid(li);
+        })
+        
+     </script>
+
+
+
+</body>
+</html>
